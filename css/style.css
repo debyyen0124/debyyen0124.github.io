@@ -1,0 +1,475 @@
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+a,
+h1,
+h3,
+h4,
+p {
+  font-family: "Open Sans", sans-serif;
+}
+h6 {
+  font-family: "Secular One", sans-serif;
+}
+
+/* =========== Navbar Starts Here ========== */
+button.navbar-toggler,
+button.navbar-toggler:visited,
+button.navbar-toggler:active,
+button.navbar-toggler:focus {
+  border: 0px none transparent;
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-brand {
+  margin: 0;
+  font-size: 0;
+  padding: 0;
+  position: relative;
+  height: 45px;
+}
+.navbar-brand h5 {
+  font-family: "Yellowtail", cursive;
+  letter-spacing: 0.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  font-size: 26px;
+  margin: 0;
+  position: absolute;
+}
+.navbar {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 100vw;
+  background-color: #ffffff69;
+}
+#navbarSupportedContent {
+  padding: 0;
+  font-size: 0;
+}
+
+.navbar-nav .nav-item .nav-link {
+  display: block;
+  color: #1b1b1b;
+  margin: 0 0.4rem;
+  font-size: 14px;
+  letter-spacing: 0.1rem;
+  transition: 0.5s;
+  border-bottom: transparent solid 2px;
+}
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link:active {
+  border-bottom: #e17e00 solid 2px;
+  color: #e17e00;
+}
+
+/* =========== Navbar Ends Here ========== */
+
+/* =========== Banner Starts Here ========== */
+.jumbotron {
+  background-image: url(/img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 100vh;
+}
+header .container {
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+header .home-caption {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+header h1 {
+  letter-spacing: 0.3rem;
+}
+header p {
+  letter-spacing: 0.3rem;
+  margin-top: 1.2rem;
+}
+header .jumbotron .home-caption .btn {
+  margin-top: 2rem;
+  display: inline-block;
+  border: rgb(100, 100, 100) 0.5px solid;
+  transition: 0.5s;
+  letter-spacing: 0.1rem;
+}
+header .jumbotron .home-caption .btn:hover {
+  background-color: #e17e00;
+  border: #e17e00 0.5px solid;
+  color: #fff;
+}
+/* =========== Banner Ends Here ========== */
+
+/* =========== About Starts Here ========== */
+section.about {
+  padding: 4em 0;
+}
+.about h2 {
+  letter-spacing: 0.3rem;
+}
+.about .section-heading-line {
+  width: 50px;
+  height: 2px;
+  background-color: #e17e00;
+  margin: 0.5rem auto 2rem auto; /*top right bottom left*/
+}
+.about .box-shadow {
+  box-shadow: 1px 1px 13px #868787;
+}
+.about h3 {
+  text-align: left;
+  font-weight: bold;
+  line-height: 1.3;
+  margin: 1.5rem 0;
+  letter-spacing: 0.1rem;
+}
+.about p {
+  text-align: left;
+  line-height: 2rem;
+}
+/* =========== About Ends Here ========== */
+/* =========== Project Starts Here ========== */
+section.project {
+  padding: 4em 0;
+}
+.project h2 {
+  letter-spacing: 0.3rem;
+}
+.project .section-heading-line {
+  width: 50px;
+  height: 2px;
+  background-color: #e17e00;
+  margin: 0.5rem auto 2rem auto; /*top right bottom left*/
+}
+.project .button-group .project-btn {
+  display: inline-block;
+  border: none;
+  margin: 0 0.25rem 2rem 0.25rem;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 12px;
+  font-weight: 600;
+  color: #959595;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+.project .button-group .project-btn:hover,
+.project .button-group .project-btn:focus,
+.project .button-group .project-btn.active {
+  color: #000000;
+  box-shadow: none;
+}
+.project .our-project img {
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.project .our-project img:hover {
+  opacity: 1;
+}
+.project .title h4 {
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+.project .title .text-secondary {
+  font-size: 14px;
+  letter-spacing: 0.1rem;
+}
+/* =========== Project Ends Here ========== */
+
+/* =========== Service Starts Here ========== */
+
+section.serice {
+  padding: 8rem 0;
+}
+.service h2 {
+  letter-spacing: 0.3rem;
+}
+.service .section-heading-line {
+  width: 50px;
+  height: 2px;
+  background-color: #e17e00;
+  margin: 0.5rem auto 2rem auto; /*top right bottom left*/
+}
+.service .row {
+  width: 100%;
+  margin: auto;
+}
+.service .service-inner {
+  margin: 1rem 0;
+  box-shadow: 1px 1px 13px #868787;
+  padding: 2rem;
+  transition: 0.5s;
+}
+.service .service-line {
+  width: 0%;
+  height: 2px;
+  background-color: #e17e00;
+  margin: 0.5rem auto 2rem auto;
+  transition: 0.5s;
+}
+.service .service-inner:hover .service-line {
+  background-color: #e17e00;
+  animation: test 0.4s ease;
+  width: 100%;
+}
+.service .service-inner .inner-img {
+  text-align: center;
+}
+.service .service-inner .inner-text h3 {
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.3;
+  margin: 1.5rem 0;
+  letter-spacing: 0.1rem;
+}
+.service .service-inner .inner-text p {
+  text-align: left;
+  line-height: 2rem;
+}
+/* =========== Service Ends Here ========== */
+
+/* =========== Client Starts Here ========== */
+section.client {
+  padding: 4em 0;
+}
+.client h2 {
+  letter-spacing: 0.3rem;
+}
+.client .section-heading-line {
+  width: 50px;
+  height: 2px;
+  background-color: #e17e00;
+  margin: 0.5rem auto 2rem auto;
+}
+.client p {
+  text-align: left;
+  line-height: 2rem;
+  display: block;
+  padding: 0 2rem;
+}
+.client .client-container {
+  width: 90%;
+  margin: 1rem auto;
+  box-shadow: 1px 1px 13px #868787;
+  padding: 2rem;
+}
+.client .client-container .client-img {
+  width: 90%;
+  margin: auto;
+}
+.client .client-container .about-client {
+  min-height: 295px;
+}
+.client .client-container h4 {
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.3;
+  margin: 1rem 0;
+  letter-spacing: 0.1rem;
+}
+.client .client-container .about-client h6 {
+  display: block;
+  height: 45px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 45px;
+  color: #e17e00;
+}
+.client .client-container p {
+  text-align: left;
+  line-height: 2rem;
+}
+/* =========== Client Ends Here ========== */
+
+/* =========== Contact Starts Here ========== */
+section.contact {
+  padding: 4em 0;
+  background-color: rgb(221, 221, 224);
+}
+.contact h2 {
+  letter-spacing: 0.3rem;
+}
+.contact .section-heading-line {
+  width: 50px;
+  height: 2px;
+  background-color: #e17e00;
+  margin: 0.5rem auto 2rem auto;
+}
+.contact p {
+  text-align: left;
+  line-height: 2rem;
+  display: block;
+  padding: 0 2rem;
+  letter-spacing: 0.1rem;
+}
+.contact .btn {
+  border: rgb(100, 100, 100, 0) 0.5px solid;
+  background-color: #e17e00;
+}
+.contact .btn:hover {
+  background-color: #f5f5dc;
+  border: #f5f5dc 0.5px solid;
+  color: #e17e00;
+}
+.contact .input-group input {
+  font-size: 8px;
+  letter-spacing: 0.1rem;
+}
+/* =========== Contact Ends Here ========== */
+
+/* =========== Footer Starts Here ========== */
+footer h6 {
+  font-family: "Yellowtail", cursive;
+  letter-spacing: 0.1rem;
+  display: block;
+  padding: 1.5rem 0 0.5rem 1rem;
+  font-size: 36px;
+  text-align: center;
+}
+footer .social-media {
+  text-align: center;
+}
+footer i {
+  margin: 0 0.5rem;
+  color: #1b1b1b;
+  opacity: 0.6;
+  transition: 0.5s;
+}
+footer i:hover {
+  opacity: 1;
+  color: #e17e00;
+}
+footer .footer-two {
+  margin: 1rem auto;
+  border-top: 0.5px dashed #868787;
+  padding: 1rem;
+  text-align: left;
+}
+footer .footer-two .contact-info {
+  padding-bottom: 10px;
+}
+
+footer .footer-two i {
+  display: inline-block;
+  width: 10%;
+  text-align: center;
+  vertical-align: top;
+}
+footer .footer-two p,
+footer .footer-two a {
+  display: inline-block;
+  width: 85%;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  vertical-align: top;
+}
+/* =========== Footer Ends Here ========== */
+
+/* =========== Bootstrap breakpoint md ========== */
+@media (min-width: 768px) {
+  /* =========== Service Starts Here ========== */
+  .service .service-inner {
+    margin: 1rem 2.5%;
+    width: 45%;
+  }
+
+  /* =========== Service Ends Here ========== */
+
+  /* =========== Client Starts Here ========== */
+
+  .client .client-container {
+    padding: 0 0 0 0;
+    --bs-gutter-x: 0;
+  }
+  .client .client-container .client-img {
+    width: 100%;
+  }
+  .client .client-container .about-client {
+    padding: 0;
+    margin: 0;
+  }
+  .client .client-container h4 {
+    text-align: center;
+    font-weight: bold;
+    line-height: 1rem;
+    margin: 1.2rem 0;
+    letter-spacing: 0.1rem;
+  }
+  .client .client-container p {
+    text-align: left;
+    line-height: 2rem;
+  }
+
+  /* =========== Client Ends Here ========== */
+
+  /* =========== Footer Starts Here ========== */
+
+  footer .footer-one {
+    position: relative;
+    text-align: center;
+  }
+  footer .footer-one .footer-one-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+  }
+  footer .footer-one .footer-one-content h6 {
+    padding: 0;
+  }
+  footer .footer-two {
+    border: none;
+  }
+  footer .footer-two i {
+    margin: 0;
+  }
+
+  /* =========== Footer Ends Here ========== */
+}
+
+/* =========== Bootstrap breakpoint lg ========== */
+@media (min-width: 992px) {
+  /* =========== Service Starts Here ========== */
+  .service .service-inner {
+    margin: 1rem 0.5%;
+    width: 32.3%;
+  }
+
+  /* =========== Service Ends Here ========== */
+
+  /* =========== Client Starts Here ========== */
+
+  .client .client-container {
+    /* height: 590px; */
+    max-width: 400px;
+    padding: 0;
+    --bs-gutter-x: 0;
+  }
+  .client .client-container .about-client {
+    height: 300px;
+  }
+
+  /* =========== Client Ends Here ========== */
+}

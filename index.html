@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C+ Interior Design</title>
+    <!-- 使用Bootstrap這類的CSS framework不需要做初始化的動作 在它們的樣式裡頭已經使用了normalize.css去做初始化 這種情況下不推薦重複初始化 -->
+    <!-- <link rel="stylesheet" href="css/reset.css">  -->
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/995ad10827.js" crossorigin="anonymous"></script>
+    
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="/Magnific-Popup/dist/magnific-popup.css">
+
+    <!-- Owl Carousel CSS file -->
+    <link rel="stylesheet" href="/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
+    <!-- Customize Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!-- Navbar Starts Here -->
+    <nav id="navbar" class="navbar fixed-top navbar-expand-md navbar-light">
+        <div class="container">
+            <a class="navbar-brand text-center" href="#"><h5>C+ Interior</h5></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#project">PROJECT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#client">CLIENTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navbar Ends Here -->
+    
+    <!-- Banner Starts Here -->
+    <header id="#">
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="home-caption col-12">
+                        <h1>The C+ Interior Design</h1>
+                        <p class="text-uppercase">Creation beyond your imagination</p>
+                        <a class="btn text-uppercase" href="#project">See Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner Ends Here -->
+
+    <!-- About Section Starts -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 offset-1 text-center">
+                    <h2 class="text-uppercase">About</h2>
+                    <div class="section-heading-line"></div>
+                    <div class="row align-items-center box-shadow">
+                        <div class="col-sm-12 col-md-6 px-0 py-0 mx-0 my-0">
+                            <img class="img-fluid" src="/img/about.jpg" alt="About">
+                        </div>
+                        <div class="col-sm-12 col-md-6 px-4 py-4">
+                            <h3>Who We Are</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt enim vel veniam
+                                corporis nam corrupti unde dolores aperiam perspiciatis? Iste explicabo obcaecati ut
+                                illum optio numquam pariatur, fuga error. Corrupti?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section Ends -->
+
+    <!-- project Section Starts -->
+    <section id="project" class="project">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 offset-1 text-center">
+                    <h2 class="text-uppercase">project</h2>
+                    <div class="section-heading-line"></div>
+                </div>
+            </div>
+            <div class="button-group text-center">
+                <button type="button" class="active project-btn" id="btn1" data-filter="*">All</button>
+                <button type="button" class="project-btn" data-filter=".popular">Popular</button>
+                <button type="button" class="project-btn" data-filter=".latest">Latest</button>
+                <button type="button" class="project-btn" data-filter=".following">Following</button>
+                <button type="button" class="project-btn" data-filter=".upcoming">Upcomings</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row grid">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 element-item upcoming">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="/img/portfolio1.jpg">
+                                <img class="img-fluid" src="/img/portfolio1.jpg" alt="portfolio1">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Residence TC</h4>
+                            <span class="text-secondary">Taichung, Taiwan</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 element-item popular">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="/img/portfolio2.jpg">
+                                <img class="img-fluid" src="/img/portfolio2.jpg" alt="portfolio2">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Residence Ou</h4>
+                            <span class="text-secondary">Vancouver, Canada</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 element-item latest">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="/img/portfolio3.jpg">
+                                <img class="img-fluid" src="/img/portfolio3.jpg" alt="portfolio3">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Residence Ji</h4>
+                            <span class="text-secondary">Tainan, Taiwan</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 element-item following">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="/img/portfolio4.jpg">
+                                <img class="img-fluid" src="/img/portfolio4.jpg" alt="portfolio4">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Residence Tsai</h4>
+                            <span class="text-secondary">Taipei, Taiwan</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 element-item following">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="/img/portfolio5.jpg">
+                                <img class="img-fluid" src="/img/portfolio5.jpg" alt="portfolio5">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">House W</h4>
+                            <span class="text-secondary">New York, USA</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 element-item upcoming">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="/img/portfolio6.jpg">
+                                <img class="img-fluid" src="/img/portfolio6.jpg" alt="portfolio6">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Apartment Wu</h4>
+                            <span class="text-secondary">Tokyo, Japan</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 element-item popular">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="/img/portfolio7.jpg">
+                                <img class="img-fluid" src="/img/portfolio7.jpg" alt="portfolio7">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Residence C</h4>
+                            <span class="text-secondary">Taipei, Taiwan</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 element-item upcoming">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="/img/portfolio8.jpg">
+                                <img class="img-fluid" src="/img/portfolio8.jpg" alt="portfolio8">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h4 class="text-uppercase">Apartment Huang</h4>
+                            <span class="text-secondary">Tainan, Taiwan</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- project Section Ends -->
+
+    <!-- Service Section Starts -->
+
+    <section id="service" class="service">
+        <div class="cotainer">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="uppercase text-center">Service</h2>
+                    <div class="section-heading-line"></div>
+                </div>
+            </div>
+            <div class="row px-5">
+                <div class="col-sm-12 col-md-6 col-lg-4 service-inner">
+                    <div class="inner-img">
+                        <img src="/img/service1.png" alt="service1">
+                    </div>
+                    <div class="inner-text">
+                        <h3>Plans and Projects</h3>
+                        <div class="service-line"></div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, obcaecati. Voluptate sequi modi quia vel aliquam, ab expedita iure, explicabo dolorem illo velit officiis libero deleniti quasi? Libero, laborum suscipit.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 service-inner">
+                    <div class="inner-img">
+                        <img src="/img/service2.png" alt="service2">
+                    </div>
+                    <div class="inner-text">
+                        <h3>Conceptual Architecture</h3>
+                        <div class="service-line"></div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione cumque provident facere ab. Porro nemo in repellendus ut facere ducimus!</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 service-inner">
+                    <div class="inner-img">
+                        <img src="/img/service3.png" alt="service3">
+                    </div>
+                    <div class="inner-text">
+                        <h3>Apartment Buildings</h3>
+                        <div class="service-line"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit numquam tempora quae possimus eaque rem veritatis, repellat accusantium eos at unde est quidem nihil officiis.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 service-inner">
+                    <div class="inner-img">
+                        <img src="/img/service4.png" alt="service4">
+                    </div>
+                    <div class="inner-text">
+                        <h3>Skyscrapers Buildings</h3>
+                        <div class="service-line"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ullam explicabo atque labore nihil magnam nisi natus obcaecati.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 service-inner">
+                    <div class="inner-img">
+                        <img src="/img/service5.png" alt="service5">
+                    </div>
+                    <div class="inner-text">
+                        <h3>Documentation</h3>
+                        <div class="service-line"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet laborum iusto aliquam ipsa id accusantium itaque voluptatibus quasi unde quaerat.</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 service-inner">
+                    <div class="inner-img">
+                        <img src="/img/service6.png" alt="service6">
+                    </div>
+                    <div class="inner-text">
+                        <h3>Restauration Projects</h3>
+                        <div class="service-line"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam commodi nihil est dolorem sint corrupti minus, architecto voluptatum, ipsum in et dolorum fugiat neque nesciunt?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Section Ends -->
+
+    <!-- Client Section Starts -->
+
+    <section id="client" class="client">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <div class="client-title">
+                        <h2 class="text-uppercase text-center">What Clients say</h2>
+                        <div class="section-heading-line"></div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio culpa harum earum consequuntur! Blanditiis aliquam odit odio nemo quisquam facilis tempora, omnis animi iste earum reiciendis obcaecati molestias explicabo saepe.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container carousel py-lg-5">
+            <div class="owl-carousel owl-theme">
+                <div class="client-container row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 client-img">
+                        <img class="img-fluid" src="/img/client1.jpg" alt="client1">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 about-client">
+                        <h4 class="text-uppercase">Jaden Smith</h4>
+                        <h6>’’</h6>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque doloribus laborum earum accusantium unde. Unde, iusto!</p>
+                    </div>
+                </div>
+                <div class="client-container row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 client-img">
+                        <img class="img-fluid" src="/img/client2.jpg" alt="client2">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 about-client">
+                        <h4 class="text-uppercase">Amy Schumer</h4>
+                        <h6>’’</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, accusantium?</p>
+                    </div>
+                </div>
+                <div class="client-container row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 client-img">
+                        <img class="img-fluid" src="/img/client3.jpg" alt="client3">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 about-client">
+                        <h4 class="text-uppercase">Rachel Bilson</h4>
+                        <h6>’’</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis harum atque error nihil eaque. Quo magni rem quasi harum sapiente.</p>
+                    </div>
+                </div>
+                <div class="client-container row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 client-img">
+                        <img class="img-fluid" src="/img/client4.jpg" alt="client4">
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 about-client">
+                        <h4 class="text-uppercase">Eric Andre</h4>
+                        <h6>’’</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, corrupti?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Service Ends -->
+
+    <!-- Contact Section Starts -->
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center contact-title">
+                    <h2 class="text-uppercase">Join our mailing list</h4>
+                    <div class="section-heading-line"></div>
+                    <p class="text-center">Subscribe to get our latest information updated!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-center">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="example@mail.com" aria-label="Username" aria-describedby="basic-addon1">
+                        <input class="btn btn-primary" type="submit" value="Subscribe">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section Ends -->
+
+    <!-- Footer Section Starts -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5 footer-one">
+                    <div class="footer-one-content">
+                        <h6>C+ Interior</h6>
+                        <div class="social-media">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 footer-two">
+                    <div class="contact-info">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>(02)2201-5678</p>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:cinterior@mail.com">cinterior@mail.com</a>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>No. 7, Section 5, Xinyi Road, Xinyi District, Taipei, Taiwan</p>
+                    </div>
+                    
+                    
+                </div>
+                
+            </div>
+        </div>
+
+    </footer>
+ 
+    <!-- Footer Section Ends -->
+
+
+    <!-- ------------------------------------------------------------------------------------------- -->
+
+    <!-- jQuery File -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Isotope -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- Magnific Popup core JS file -->
+    <script src="/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
+    
+    <!-- Owl Carousel js file -->
+    <script src="/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+    <!-- Customize JavaScript -->
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
